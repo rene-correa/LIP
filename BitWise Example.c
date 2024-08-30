@@ -1,3 +1,11 @@
+/**
+ *  @ Author: Renê Corrêa
+ *  @ Create Time: 29-08-24 19:52:20
+ *  @ Modified by: Renê Corrêa
+ *  @ Modified time: 30-08-24 09:57:13
+ *  @ Description: BitWise basic operations examples
+ */
+
 #include <stdio.h>
 
 int main(){
