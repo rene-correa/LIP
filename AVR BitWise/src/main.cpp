@@ -16,9 +16,6 @@
 #define Led3 (1<<PORTD2)
 #define Led4 (1<<PORTD3)
 
-// put function declarations here:
-int myFunction(int, int);
-
 int main(){
   DDRD |= Led1 | Led2 | Led3 | Led4; //Define PortD 0 a 3 como saída
   PORTD &=~ Led1 &~ Led2 &~ Led3 &~ Led4;
@@ -37,9 +34,4 @@ int main(){
     PORTD &=~ Led1 &~ Led2 &~ Led3;
     _delay_ms(500);
   }
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
