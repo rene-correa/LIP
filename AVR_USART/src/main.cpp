@@ -4,7 +4,10 @@
  *  @ Description:
  */
 
+#ifdef F_CPU
+#undef F_CPU
 #define F_CPU 16000000UL 
+#endif
 
 #include <avr/io.h>      
 #include <util/delay.h>  
@@ -43,7 +46,7 @@ int main()
 		// Transmisão de dados 
 		SendMessage(string);
 		
-		_delay_ms(500); // Intervalo de transmissão
+		_delay_ms(1000); // Intervalo de transmissão
 	}
 	return 0;
 }
